@@ -1,0 +1,103 @@
+html{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    background-color: rgb(1, 5, 18);
+    background-image:  url(/img/pexels-frans-van-heerden-624015.jpg);
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    user-select: none;
+
+}
+
+
+svg{
+    animation: rotate 25s linear infinite  ;
+    height: 95vh;
+    width: 95vw;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 45%;
+    right: 51.5%;
+}
+
+.logincard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem;
+    height: 25rem;
+    background-color: rgba(61, 15, 246, 0.078);
+    border-radius: 1rem;
+    backdrop-filter: blur(20px);
+    box-shadow: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    position: absolute;
+    row-gap: 4vmin;
+}
+
+#header{
+    font-weight: bolder;
+    font-size: xx-large;
+  
+}
+
+#username, #password{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+input{
+    background-color: transparent;
+}
+
+
+
+#username::placeholder, #password::placeholder{
+    color: rgba(9, 9, 9, 0.584)
+
+}
+
+button{
+    margin-top: 10vmin;
+    width: 10vmin;
+    padding: 1vmin;
+    border-radius: 10%;
+    border: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+button:hover {
+    background-color: rgba(253, 253, 253, 0.822);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+
